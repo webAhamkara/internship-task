@@ -1,10 +1,8 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
-  base: '/internship-task/',
   plugins: [vue()],
 
   resolve: {
@@ -14,7 +12,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../docs',
+    outDir: './docs',
     emptyOutDir: true,
     assetsDir: 'assets',
   },
